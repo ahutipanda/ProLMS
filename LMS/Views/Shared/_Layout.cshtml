@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-loading-bar/0.8.0/loading-bar.css" />
+    <link href="Content/Site.css" rel="stylesheet" />
+
+
+    <title>Prowareness Leave System</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body data-ng-app="leaveManagement">
+    <div data-ng-controller="mainController">
+        
+        <nav class="navbar navbar-default custom-nav">
+            <div class="container">
+                <div class="navbar-header" style="min-height: 80px;">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img src="~/Content/logo_small.png" alt="Prowareness" class="brand-image" />
+                    </a>
+                </div>
+
+                
+                    <div class="collapse navbar-collapse navbar-collapse">
+                        <ul class="nav navbar-nav navbar-right ">
+                            <li><a href="#" style="padding-top: 30px; color: white;"><span style="padding-right: 10px" class="glyphicon glyphicon-home"></span>Home</a></li>
+                            <li><a href="#" style="padding-top: 30px; color: white;"><span style="padding-right: 10px" class="glyphicon glyphicon-pencil"></span>Apply Leaves</a></li>
+                            <li><a href="#" style="padding-top: 30px; color: white;"><span style="padding-right: 10px" class="glyphicon glyphicon-check"></span>Approve</a></li>
+                        </ul>
+                    </div>
+            </div>
+        </nav>
+
+        
+        <div class="container body-content">
+            @RenderBody()
+
+            <div class="vertical-text">
+                <div>Feedback</div>
+            </div>
+
+            <br />
+            <footer>
+                <div class="container">
+                    <div class="footer-div navbar-fixed-bottom">
+                        <div class="row">
+                            <div class="footer-div-text">
+                                &copy; 2016 Prowareness
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        @*<div class="loading" style="width:100%; height:100%">
+
+            <img src="~/Content/45.gif" />
+
+        </div>*@
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Loading Scripts Ends -->
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.1/angular.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.1/angular-route.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-loading-bar/0.8.0/loading-bar.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hellojs/1.14.0/hello.all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hellojs/1.14.0/hello.min.js"></script>
+
+
+    <script src="assets/scripts/config.js"></script>
+    <script src="assets/scripts/aad.js"></script>
+    <script src="assets/main.js"></script>
+    <script src="assets/services/graphHelper.js"></script>
+    <script src="~/assets/services/UserService.js"></script>
+    <script src="~/assets/services/apiService.js"></script>
+    <script src="~/assets/controllers/MainController.js"></script>
+    <script src="~/assets/controllers/HomeController.js"></script>
+    <script src="~/assets/controllers/DashboardController.js"></script>
+    <script src="~/assets/controllers/loginController.js"></script>
+</body>
+</html>
