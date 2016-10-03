@@ -42,6 +42,7 @@ namespace LMS.Controllers
             catch (Exception ex)
             {
                 //return View(user);
+
                 return user;
             }
 
